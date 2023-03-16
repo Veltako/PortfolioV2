@@ -1,0 +1,218 @@
+<!doctype html>
+<html lang="fr">
+
+	<head>
+		<meta charset="utf-8">
+		<title>Portfolio</title>
+		<meta name="description" content="Mon Portfolio qui regroupe l'ensemble de ma vie">
+		<meta name="author" content="Dupache Baptiste">
+		<meta name="viewport" content="width=device-width, initial-scale=1.0">
+		<link rel="stylesheet" href="dist/reset.css">
+		<link rel="stylesheet" href="dist/reveal.css">
+		<link rel="stylesheet" href="dist/theme/black.css" id="theme">
+
+		<!-- Theme used for syntax highlighting of code -->
+		<link rel="stylesheet" href="plugin/highlight/monokai.css">
+	</head>
+
+	<body>
+		<div class="reveal">
+			<div class="slides">
+				
+				<section>
+					<h1 style="color: var(--bleu);">Mon Portfolio</h1>
+					<p>Vous pouvez utiliser <strong style="color: var(--link);"><em>les touches du clavier</em></strong> pour slider sur les côtés.</p>
+					<p></p>
+				</section>
+
+				<section id="transitions">
+					<h2 style="color: var(--bleu);">Styles de transition.</h2>
+					<p>
+						Sélectionner la transition qui vous plaît le plus: <br>
+						<a href="?transition=none#/transitions" style="color: red;">Aucune</a> -
+						<a href="?transition=fade#/transitions" style="color: orange;">Fade</a> -
+						<a href="?transition=slide#/transitions" style="color: yellow;">Slide</a> -
+						<a href="?transition=convex#/transitions" style="color: green;">Convex</a> -
+						<a href="?transition=concave#/transitions" style="color: blue;">Concave</a> -
+						<a href="?transition=zoom#/transitions" style="color: purple;">Zoom</a>
+					</p>
+				</section>
+
+				<section>
+					<h2 style="color: var(--bleu);">Sommaire</h2>
+					<ol>
+						<li><a href="#about" style="color: var(--link)">À propos de moi</a>
+							<ul>
+								<li><a href="#skills" style="color: var(--link)">Compétences</a></li>
+							</ul>
+						</li>
+						<li><a href="" style="color: var(--link)">Portfolio</a></li>
+						<li><a href="" style="color: var(--link)">Contact</a></li>
+					</ol>
+				</section>
+
+				<section>
+					<section id="about">
+						<h2 style="color: var(--bleu);">À propos de moi</h2>
+						<img src="img/pp.jpg" alt="ma photo" style="width: 40%; border-radius: 50px;">
+						<p>Je m'appelle Baptiste Dupache.</p>
+						<p>J'ai <strong style="color: var(--link);">18 ans.</strong></p>
+					</section>
+					<section>
+						<p>Je recherche actuellement <strong style="color: var(--link);">un stage</strong> à partir du <strong style="color: var(--link);">26/06 aux 15/09</strong> et <strong style="color: var(--link);">une alternance</strong> avec qui je passerais mes diplômes dans l'école CESI à Arras.</p>
+					</section>
+					<section>
+						<h2 id="skills" style="color: var(--bleu)">Compétences</h2>
+						<table>
+							<thead>
+								<tr>
+									<th>Compétences</th>
+									<th>Actuel</th>
+									<th>Voulue</th>
+								</tr>
+							</thead>
+							<tbody>
+								<tr>
+									<td>HTML</td>
+									<td>70%</td>
+									<td>100%</td>
+								</tr>
+								<tr>
+									<td>CSS</td>
+									<td>50%</td>
+									<td>80%</td>
+								</tr>
+								<tr>
+									<td>JS</td>
+									<td>5%</td>
+									<td>70%</td>
+								</tr>
+								<tr>
+									<td>BOOTSTRAP</td>
+									<td>20%</td>
+									<td>100%</td>
+								</tr>
+								<tr>
+									<td>PHP</td>
+									<td>1%</td>
+									<td>100%</td>
+								</tr>
+							</tbody>
+						</table>
+					</section>
+					<section>
+						<table>
+							<tbody>
+								<tr>
+									<td>numéro:</td>
+									<td>70%</td>
+								</tr>
+								<tr>
+									<td>E-mail:</td>
+									<td>Baptistedupache@gmail.com</td>
+								</tr>
+								<tr>
+									<td>Ville:</td>
+									<td>Lens</td>
+								</tr>
+							</tbody>
+						</table>
+					</section>
+				</section>
+
+				<section>
+					<section>
+						<h2 style="color: var(--bleu);">Portfolio</h2>
+						<p>J'ai fait trois projets.</p>
+					</section>
+					<section>
+						<p>Mon premier projet était sur le thème de phasmophobia.</p>
+						<a href="#"><img src="img/portfolio/1610382903-4670-card.jpg" alt="image phasmophobia" style="border: 5px solid grey;"></a>
+					</section>
+					<section>
+						<p>Mon deuxième site qui n'est pas fini car j'ai perdu trop de temps en résolvant des bugs qui rajoutent des autres bugs.</p>
+						<a href="https://realestateprojectafci.netlify.app/"><img src="img/portfolio/Screenshot_48.png" alt="image realestat" style="width: 50%;"></a>
+					</section>
+				</section>
+
+				<section data-auto-animate>
+					<h2 data-id="code-title" style="color: var(--bleu);">Je n'aime pas le design en général</h2>
+					<pre data-id="code-animation"><code class="hljs javascript" data-trim data-line-numbers>
+						*{
+							padding: 0;
+							margin: 0;
+							box-sizing: border-box;
+						}
+					</code></pre>
+				</section>
+
+				<section data-auto-animate>
+					<h2 data-id="code-title" style="color: var(--bleu);">Je préfère le back-end</h2>
+					<pre data-id="code-animation"><code class="hljs javascript" data-trim data-line-numbers="2,4,6"><script type="text/template">
+							<?php
+							function carre($num)
+							{
+								return $num * $num;
+							}
+							echo carre(4); // Affiche '16'
+							?>
+					</script></code></pre>
+				</section>
+
+				<section data-auto-animate data-auto-animate-easing="cubic-bezier(0.770, 0.000, 0.175, 1.000)">
+					<h2>Pourquoi je n'ai pas le design</h2>
+					<p>Je n'ai juste pas le sens artiste que les autres personnes ont c'est pour ça que je n'aime pas le design.</p>
+					<p>Un exemple: je n'arrive pas à combiner les couleurs</p>
+					<div class="r-hstack justify-center">
+						<div data-id="box1" style="background: #ffffff; width: 50px; height: 50px; margin: 10px; border-radius: 5px;"></div>
+						<div data-id="box2" style="background: #00aeff; width: 50px; height: 50px; margin: 10px; border-radius: 5px;"></div>
+						<div data-id="box3" style="background: #0e9420; width: 50px; height: 50px; margin: 10px; border-radius: 5px;"></div>
+					</div>
+				</section>
+				<section data-auto-animate data-auto-animate-easing="cubic-bezier(0.770, 0.000, 0.175, 1.000)">
+					<div class="r-hstack justify-center">
+						<div data-id="box1" data-auto-animate-delay="0" style="background: cyan; width: 150px; height: 100px; margin: 10px;"></div>
+						<div data-id="box2" data-auto-animate-delay="0.1" style="background: magenta; width: 150px; height: 100px; margin: 10px;"></div>
+						<div data-id="box3" data-auto-animate-delay="0.2" style="background: yellow; width: 150px; height: 100px; margin: 10px;"></div>
+					</div>
+					<h2 style="margin-top: 20px;">Mais rien ne m'empêche d'en faire.</h2>
+				</section>
+				<section data-auto-animate data-auto-animate-easing="cubic-bezier(0.770, 0.000, 0.175, 1.000)">
+					<div class="r-stack">
+						<div data-id="box1" style="background: cyan; width: 300px; height: 300px; border-radius: 200px;"></div>
+						<div data-id="box2" style="background: magenta; width: 200px; height: 200px; border-radius: 200px;"></div>
+						<div data-id="box3" style="background: yellow; width: 100px; height: 100px; border-radius: 200px;"></div>
+					</div>
+					<p style="margin-top: 20px;">Avec un combo de JavaScript et de conseille sur le design je pourrais m'en sortir.</p>
+				</section>
+
+				<section>
+					<h1>Expériences</h1>
+				</section>
+
+			</div>
+
+		</div>
+
+		<script src="dist/reveal.js"></script>
+		<script src="plugin/zoom/zoom.js"></script>
+		<script src="plugin/notes/notes.js"></script>
+		<script src="plugin/search/search.js"></script>
+		<script src="plugin/markdown/markdown.js"></script>
+		<script src="plugin/highlight/highlight.js"></script>
+
+		<script>
+
+			// Also available as an ES module, see:
+			// https://revealjs.com/initialization/
+			Reveal.initialize({
+				controls: true,
+				progress: true,
+				center: true,
+				hash: true,
+				// Learn about plugins: https://revealjs.com/plugins/
+				plugins: [ RevealZoom, RevealNotes, RevealSearch, RevealMarkdown, RevealHighlight ]
+			});
+		</script>
+	</body>
+</html>
