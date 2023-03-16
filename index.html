@@ -42,10 +42,17 @@
 						<li><a href="#about" style="color: var(--link)">À propos de moi</a>
 							<ul>
 								<li><a href="#skills" style="color: var(--link)">Compétences</a></li>
+								<li><a href="#contact" style="color: var(--link)">Contact</a></li>
 							</ul>
 						</li>
-						<li><a href="" style="color: var(--link)">Portfolio</a></li>
-						<li><a href="" style="color: var(--link)">Contact</a></li>
+						<li><a href="#portfolio" style="color: var(--link)">Portfolio</a></li>
+						<li><a href="#cv" style="color: var(--link)">CV</a>
+							<ul>
+								<li><a href="#dip" style="color: var(--link)">Diplômes</a></li>
+								<li><a href="#exp" style="color: var(--link)">Expériences</a></li>
+							</ul>
+						</li>
+						<li><a href="#lm" style="color: var(--link)">Lettre de motivation</a></li>					
 					</ol>
 				</section>
 
@@ -64,7 +71,7 @@
 						<h2 id="skills" style="color: var(--bleu)">Compétences</h2>
 						<table>
 							<thead>
-								<tr>
+								<tr style="color: rgb(0, 255, 30)">
 									<th>Compétences</th>
 									<th>Actuel</th>
 									<th>Voulue</th>
@@ -72,27 +79,27 @@
 							</thead>
 							<tbody>
 								<tr>
-									<td>HTML</td>
+									<td style="color: var(--link)">HTML</td>
 									<td>70%</td>
 									<td>100%</td>
 								</tr>
 								<tr>
-									<td>CSS</td>
+									<td style="color: var(--link)">CSS</td>
 									<td>50%</td>
 									<td>80%</td>
 								</tr>
 								<tr>
-									<td>JS</td>
+									<td style="color: var(--link)">JS</td>
 									<td>5%</td>
 									<td>70%</td>
 								</tr>
 								<tr>
-									<td>BOOTSTRAP</td>
+									<td style="color: var(--link)">BOOTSTRAP</td>
 									<td>20%</td>
 									<td>100%</td>
 								</tr>
 								<tr>
-									<td>PHP</td>
+									<td style="color: var(--link)">PHP</td>
 									<td>1%</td>
 									<td>100%</td>
 								</tr>
@@ -100,19 +107,20 @@
 						</table>
 					</section>
 
-					<section>
+					<section id="contact">
+						<h2 style="color: var(--bleu);">Contact</h2>
 						<table>
 							<tbody>
 								<tr>
-									<td>Numéro:</td>
+									<td style="color: var(--link)">Numéro:</td>
 									<td>06.23.63.08.86</td>
 								</tr>
 								<tr>
-									<td>E-mail:</td>
+									<td style="color: var(--link)">E-mail:</td>
 									<td>Baptistedupache@gmail.com</td>
 								</tr>
 								<tr>
-									<td>Ville:</td>
+									<td style="color: var(--link)">Ville:</td>
 									<td>Lens</td>
 								</tr>
 							</tbody>
@@ -165,7 +173,7 @@
 
 				<section data-auto-animate data-auto-animate-easing="cubic-bezier(0.770, 0.000, 0.175, 1.000)">
 					<h2 style="color: var(--bleu);">Pourquoi je n'ai pas le design</h2>
-					<p>Je n'ai juste pas le sens artiste que les autres personnes ont c'est pour ça que je n'aime pas le design.</p>
+					<p>Je n'ai juste pas le sens artistique que les autres personnes ont c'est pour ça que je n'aime pas le design.</p>
 					<p>Un exemple: je n'arrive pas à combiner les couleurs.</p>
 					<div class="r-hstack justify-center">
 						<div data-id="box1" style="background: #ffffff; width: 50px; height: 50px; margin: 10px; border-radius: 5px;"></div>
@@ -192,12 +200,31 @@
 					<p style="margin-top: 20px;">Avec un combo de JavaScript et de conseille sur le design je pourrais m'en sortir.</p>
 				</section>
 
-				<section id="exp">
+				<section id="cv">
+					<section id="dip">
+						<h1 style="color: var(--bleu);">Diplômes</h1>
+					</section>
+
+					<section>
+						<table>
+							<thead>
+								<tr>
+									<th>2022</th>
+									<th>Baccalauréat Technicien Froid Conditionnement de l'Air (TFCA)</th>
+								</tr>
+								<tr>
+									<th>2021</th>
+									<th>BEP Froid Conditionnement de l'Air</th>
+								</tr>
+							</thead>
+						</table>
+					</section>
+
 					<section>
 						<h1 style="color: var(--bleu);">Expériences</h1>
 					</section>
 					
-					<section>
+					<section id="exp">
 						<table>
 							<thead>
 								<tr>
@@ -264,7 +291,7 @@
 
 				</section>
 
-				<section>
+				<section id="lm">
 					<h2 style="color: var(--bleu);">Lettre de motivation</h2>
 					<pre data-id="code-animation"><code class="hljs javascript" data-trim data-line-numbers>
 						<h1>Madame,Monsieur,</h1>
